@@ -6,7 +6,7 @@ void quicksort(double num[], int left, int right);
 int main() {
 
 	int N;
-	// -4000~4000ÀÇ ºóµµ¼ö¸¦ ÀúÀåÇÏ±â À§ÇÑ ¹è¿­
+	// -4000~4000ì˜ ë¹ˆë„ìˆ˜ë¥¼ ì €ì¥í•˜ê¸° ìœ„í•œ ë°°ì—´
 	int count[8001] = { 0 };
 	//int num[500000];
 	scanf("%d", &N);
@@ -25,11 +25,11 @@ int main() {
 	for (int i = 0; i < N; i++) {
 		sum += num[i];
 	}
-	// Æò±Õ°ª(Ã¹Â° ÀÚ¸®¿¡¼­ ¹İ¿Ã¸²)
+	// í‰ê· ê°’(ì²«ì§¸ ìë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼)
 	printf("%.0lf\n", floor(sum / N + 0.5));
-	// Áß¾Ó°ª
+	// ì¤‘ì•™ê°’
 	printf("%.0lf\n", num[N / 2]);
-	// ÃÖºó°ª
+	// ìµœë¹ˆê°’
 	int max = 0;
 	for (int i = 0; i < 8001; i++) {
 		if (count[i] > max) {
@@ -51,7 +51,7 @@ int main() {
 	if (dup == 1) {
 		printf("%d\n", first);
 	}
-	// ¹üÀ§(ÃÖ´ë°ª°ú ÃÖ¼Ò°ªÀÇ Â÷ÀÌ)
+	// ë²”ìœ„(ìµœëŒ€ê°’ê³¼ ìµœì†Œê°’ì˜ ì°¨ì´)
 	printf("%.0lf\n", num[N - 1] - num[0]);
 	return 0;
 }
